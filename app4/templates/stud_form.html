@@ -1,0 +1,36 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form menthod="post" actions="save">
+            {% csrf_token %}
+            <h3>Registration Form</h3>
+            <div>
+                <label id="labels">Std id</label>
+                <input type="number" name="id">
+            </div>
+            <div>
+                <label id="labels">Name</label>
+                <input type="text" name="name">
+            </div>
+            <div>
+                <label id="labels">Course</label>
+                <input type="text" name="Course">
+            </div>
+            <div>
+                <label id="labels">fee</label>
+                <input type="number" name="fee">
+            </div>
+            
+            <div>
+                <input type="submit" value="save">
+                <input type="reset">
+            </div>
+        </form>
+    </body>
+    </html>
+
